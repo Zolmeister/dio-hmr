@@ -1,0 +1,16 @@
+{
+  "name": "dio-hmr",
+  "version": "0.0.0",
+  "author": "Zolmeister (https://zolmeister.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "dio.js": "^7.1.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  },
+  "scripts": {
+    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --content-base src/"
+  }
+}
