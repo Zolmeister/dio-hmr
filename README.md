@@ -8,6 +8,7 @@ PRs welcome
 
 ```bash
 yarn install
+yarn link dio.js
 ```
 
 ### Run
@@ -20,7 +21,7 @@ yarn start
 ### Example Usage
 
   - Open chrome dev tools, network tab.
-  - Edit src/style.css and save
+  - Edit `src/style.css` and save
     - Note how the update ocurres without reloading the page
   - Now.... try to figure out how to get it to work with `app.js` :wink:
 
