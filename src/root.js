@@ -8,10 +8,4 @@ for (var i = 0; i < styles.length; i++)
   document.head.appendChild(styles[i])
 
 if (module.hot)
-  module.hot.accept('./app', function () {
-    var newApp = require('./app')
-    var styles = document.head.querySelectorAll('style')
-    dio.hydrate(newApp)
-    for (var i = 0; i < styles.length; i++)
-      document.head.appendChild(styles[i])
-  })
+  module.hot.accept()
