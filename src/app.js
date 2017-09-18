@@ -7,7 +7,7 @@ module.exports = function () {
   return [
     h('head',
       h('title', 'dio'),
-      h('script', {src: '/bundle.js'})
+      typeof window === 'undefined' ? h('script', {src: '/bundle.js'}) : null
     ),
     h('body', h('div', {className: 'dio'}, 'dio!'))
   ]

@@ -2,11 +2,10 @@ var dio = require('dio.js')
 
 var App = require('./app')
 
-// FIXME
-if (!window.hydrated) {
-  window.hydrated = true
-  dio.hydrate(App)
-}
+dio.hydrate(App)
 
 if (module.hot)
-  module.hot.accept()
+  module.hot.accept('./app', function () {
+    var newApp = require('./app')
+    dio.render(newApp)
+  })
