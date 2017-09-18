@@ -1,8 +1,6 @@
-# Dio.js - Webpack Hot Reload Support
+# Dio.js - Webpack Hot Module Replacement
 
-This project is a playground to try to get [webpack hot module replacement](https://webpack.js.org/concepts/hot-module-replacement/) to work with dio.js
-
-PRs welcome
+This project is an example of using [webpack hot module replacement](https://webpack.js.org/concepts/hot-module-replacement/) with dio.js
 
 ### Install
 
@@ -23,7 +21,8 @@ yarn start
   - Open chrome dev tools, network tab.
   - Edit `src/style.css` and save
     - Note how the update ocurres without reloading the page
-  - Now.... try to figure out how to get it to work with `app.js` :wink:
+  - Edit `src/app.js` and save
+    - It works!
 
 ### Other Web Framework Implementations
 
